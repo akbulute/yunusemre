@@ -1,0 +1,21 @@
+
+
+/* Genel Hedef Belirlemeleri */
+h1 ,h2  {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+h2 {
+    color: #333; /* Alt başlık rengi */
+    margin-top: 20px; /* Üst boşluk */
+}
+
+
+
+
+
+
+
+

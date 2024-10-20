@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" sitendeki anahtar kelimeler">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Yunus Emre Akbulut">
+    <title>Memnuniyet</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/hakkımda.css">
+    <link rel="stylesheet" href="./css/projeler.css">
+    <link rel="stylesheet" href="./css/memnuniyet.css">
+    <link rel="stylesheet" href="./css/iletişim.css">
+
+    <link rel="stylesheet" media="(max-width:768px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="(max-width:505px)" href="./css/mobile.css">
+    
+</head>
+<body id="body">
+    <header>
+        <nav id="mobile-nav" >
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Beğendiklerim</a></li>
+                <li><a href="projeler.html">Projelerim</a></li>
+                <li><a href="memnuniyet.html">Memnuniyet </a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="memnuniyet">
+        <h1 style="font-size: 24px;">Memnuniyet  Anketi</h1>
+        <form id="feedback-form">
+     
+
+            <!-- <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br><br> -->
+    
+            <label for="rating">Değerlendirme</label><br>
+<div class="rating">
+    <input type="radio" id="star1" name="rating" value="5">
+    <label for="star1" title="5 yıldız" class="fas fa-star"></label>
+
+    <input type="radio" id="star2" name="rating" value="4">
+    <label for="star2" title="4 yıldız" class="fas fa-star"></label>
+
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3" title="3 yıldız" class="fas fa-star"></label>
+
+    <input type="radio" id="star4" name="rating" value="2">
+    <label for="star4" title="2 yıldız" class="fas fa-star"></label>
+
+    <input type="radio" id="star5" name="rating" value="1">
+    <label for="star5" title="1 yıldız" class="fas fa-star"></label>
+</div>
+<br>
+    
+            <label for="comments">Geri Bildirim</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Memnuniyetinizi paylaşın..." required></textarea><br><br>
+    
+            <input type="submit" value="Gönder">
+        </form>
+        <div id="yorumlar-ve-degerlendirmeler">
+            <h2>Yapılan Yorumlar ve Değerlendirmeler</h2>
+            <div id="yorumlar-liste">
+                <!-- Kullanıcı yorumları burada gösterilecek -->
+            </div>
+        </div>
+        
+        <p></p>
+
+        <div id="thanks-message" style="display:none;">
+            <li id="return" ><a class="return" href="memnuniyet.html">Geri Dön</a></li>
+
+            <p id="return">Geri bildiriminiz için teşekkürler!</p>
+        </div>
+        
+    </div>
+    
+        <script src="script.js"></script>
+        
+</body>
+</html>

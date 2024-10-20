@@ -1,0 +1,53 @@
+/* hakkımda kısmı css düzenlemeleri */
+ #hakkımda {
+    background-color: rgb(241, 231, 250);
+}
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    gap: 20px; /* Fotoğraflar arasındaki boşluğu artır */
+
+    background-color: azure;
+    max-width: 1000px ;
+    margin:75px auto;
+    padding:50px ;
+    border-radius: 5px;
+}
+
+.item {
+    display: block;
+    flex: 0 0 calc(45% - 20px); /* Fotoğraf genişliği */
+    margin-bottom: 20px; /* Alt alta sıralanan gruplar arasındaki boşluk */
+}
+
+.item img {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.item h3 {
+    margin: 10px 0; /* Başlık için üst ve alt boşluk */
+}
+
+.paragraph {
+    margin: 10px 0; /* Paragraflar için üst ve alt boşluk */
+}
+
+.paragraph p {
+    margin: 5px 0; /* Her paragrafa alt boşluk */
+    line-height: 1.6; /* Satır yüksekliği */
+}
+
+.item a {
+    text-decoration: none;
+}
+i {
+    font-weight: bold !important;
+
+}
+

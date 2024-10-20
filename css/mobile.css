@@ -1,0 +1,138 @@
+body {
+    font-size: 16px;
+}
+
+
+#mobile-nav li {
+    font-size: 12px;
+    padding: 0;
+    margin: 0 auto;
+}
+#mobile-nav li a {
+    margin-right: 10px;
+}
+
+.ben {
+ 
+    padding: 5px;
+    max-width:  auto;
+    padding-top:0 !important;
+    min-height: 400px;
+}
+.ben p{
+    padding-left: 20px; 
+
+}
+
+/* hakkımda */
+
+.container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+.container .item  img{
+    width: 350px;
+    
+
+}
+.item {
+    background-color: transparent;
+    
+}
+.container p {
+
+    text-align: justify;
+
+}
+
+
+/* projelerim */
+#let {
+    background-color: bisque;
+}
+.project-container {
+    font-size: 14px;
+}
+button {
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+}
+.nav-buttons {
+    font-size: 4px;
+    margin: 0 auto;
+    padding:0;
+}
+.project-container .project a i {
+    color: cadetblue;
+    background-color: transparent;
+    padding:8px 50px;
+    border-radius: 50px; /*  ikon arka planı */
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* memnuniyet */
+#feedback-form {
+    width: 300px;
+    text-align: center;
+}
+
+
+.rating label{
+    padding-top: 0;
+    font-size: 19px;
+
+}
+
+
+/* iletişim */
+#iletişim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+.contact {
+    text-align: center;
+    width: 400px !important;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.contact form button  {
+    width: 200px;
+}
+.contact form  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact form input,
+.contact form textarea {
+    width: 350px;
+    padding: 10px;
+
+}
+
+footer {
+    width: 100%;
+
+}
+#quick-links li a i {
+    font-size: 30px;
+    margin-top: 40px;
+}
+#quick-links p {
+    margin-top: 25px;
+}

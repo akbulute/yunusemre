@@ -1,0 +1,150 @@
+/* memnuniyet */
+#body {
+    background-color: beige;
+    padding-top: 20px;
+}
+h1 {
+    color: #333;
+}
+
+
+
+
+
+input, textarea {
+    width: 100%;
+
+}
+
+
+/* style.css içeriği */
+.memnuniyet {
+    margin-top: 5em;
+}
+#feedback-form {
+    margin: auto;
+    margin-bottom: 20px; /* Formun altında boşluk bırak */
+    padding: 20px;
+    max-width: 600px;
+
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+#comments {
+    margin-top: 10px; /* Textarea'nın üstünde boşluk bırak */
+    margin-bottom: 10px; /* Textarea'nın altında boşluk bırak */
+    width: 100%; /* Textarea genişliğini ayarla */
+    padding: 10px; /* İçerik için boşluk bırak */
+    border: 1px solid #ccc; /* Kenar çizgisi */
+    border-radius: 4px; /* Kenar yuvarlama */
+    box-sizing: border-box; /* Padding ve border genişliği hesaba kat */
+    resize: none;
+    outline: none;
+    background-color: azure;
+}
+
+
+
+.rating {
+    padding: 2em;
+    width: fit-content; /* Genişliği içerikle uyumlu yap */
+    margin: 0 auto; /* Yatayda ortala */
+    gap: 10px; /* Yıldızlar arasında boşluk */
+}
+.rating input {
+    display: none;
+}
+
+/* Butona stil ekleme (isteğe bağlı) */
+input[type="submit"] {
+    padding: 10px 15px; /* Buton için iç boşluk */
+    border: none; /* Kenar çizgisi kaldır */
+    border-radius: 4px; /* Kenar yuvarlama */
+    background-color: #4CAF50; /* Buton arka plan rengi */
+    color: white; /* Buton yazı rengi */
+    cursor: pointer; /* İmleci el şeklinde göster */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Hover durumu için arka plan rengi değişimi */
+}
+
+.rating label {
+    float: right; /*yıldızların soldan sağa doğru yanmasını sağlar*/
+    color: #ddd;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+
+/* return  */
+
+#return {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    list-style: none;
+    text-align: center;
+    margin-top: 1.5em;
+    
+}
+#return p {
+    
+    text-align: center;
+}
+.return  {
+    color: black;
+    text-decoration: none;    
+    padding:8px 100px;
+    border: 1px solid ;
+    border-radius: 50px;
+}
+.return:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+#yorumlar-ve-degerlendirmeler {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#yorumlar-liste {
+    max-height: 200px; /* Çok uzun olursa sınırla */
+    overflow-y: auto;  /* Kaydırma çubuğu ekle */
+    padding: 10px;
+}
+
+
+
+
+
+#yorumlar-liste p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 5px;
+}
+
+.yorum-yildizlar {
+    display: flex;
+    justify-content:end;
+    color: gold;
+    font-size: 20px;
+}
+

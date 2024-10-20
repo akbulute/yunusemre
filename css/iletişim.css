@@ -1,0 +1,112 @@
+/* Contact */
+.contact h1 {
+    margin-top: 80px;
+}
+.contact {
+    padding: 20px ; 
+    background:beige;
+    text-align: center;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;    /* textareanın boyutunu sabitlemek için */
+    outline: none;  /* tıklkadığımızda dış kısımdaki borderı kaldırdık */
+    
+
+   
+
+}
+
+.contact form button {
+    width:300px;
+    padding: 10px 0;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.contact form button:hover {
+    border: none;
+    background: #4ba1fd;
+    color:#ffd700;
+    
+    cursor: pointer;
+}
+
+/* contact hover */
+.contact form input:hover,
+.contact input:focus
+ {
+    background-color: #ccc;
+
+}
+textarea:hover,
+textarea:focus {
+    background-color: #ccc;
+}
+
+/* Footer */
+footer {
+    color:black;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: beige ; /* Arka plan rengi (koyu gri) */
+    height: 150px;
+    padding:0;
+    margin: 0 auto;
+    width: 100%;
+
+}
+footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .social a {
+    padding: 20px;
+}
+footer .social p{
+    padding: 10px;
+}
+
+footer .social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap:10px; /* İkonlar arasındaki boşluk */
+}
+
+footer .social li {
+    display: block;
+}
+
+footer .social a {
+    text-decoration: none;
+}
+
+footer i {
+    margin-top: 40px;
+    color: black;
+    font-size: 30px;
+}
+footer p {
+    margin-top: 25px;
+}

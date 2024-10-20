@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+/* Üst Kısım Stili */
+header {
+    background-color: white; /* Başlık arka plan rengi */
+    color: blue; /* Başlık metin rengi */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    text-align: center; /* Ortalanmış metin */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    opacity: 0.9; /* Hafif şeffaflık */
+}
+
+/* Navigasyon Stili */
+nav ul {
+    list-style: none; /* Madde işaretlerini kaldır */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ortala */
+}
+
+nav ul li {
+    margin: 0 20px; /* Yan boşluklar */
+}
+
+nav ul li a {
+    padding: 7px;
+    color:#1a589b;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    font-weight: bold; /* Kalın yazı tipi */
+    transition: color 0.3s; /* Renk değişimi için geçiş efekti */
+}
+
+nav ul li a:hover {
+    
+    border-radius: 4px;
+    color:azure; /* Hover rengi */
+    background-color:#6f9bca
+}
+
+
+/* İçerik Stili */
+section {
+    padding: 50px;
+    margin: 20px;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+
+.ben {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    background-color:#6f9bca;
+    border-radius: 30px;
+    min-height: 300px;
+}
+
+

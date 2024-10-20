@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html id="let" lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" sitendeki anahtar kelimeler">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Yunus Emre Akbulut">
+    <title>Projeler</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/hakkımda.css">
+    <link rel="stylesheet" href="./css/projeler.css">
+    <link rel="stylesheet" href="./css/memnuniyet.css">
+    <link rel="stylesheet" href="./css/iletişim.css">
+
+    <link rel="stylesheet" media="(max-width:768px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="(max-width:505px)" href="./css/mobile.css">
+
+</head>
+<body id="let">
+    <header>
+        <nav id="mobile-nav" >
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Beğendiklerim</a></li>
+                <li><a href="projeler.html">Projelerim</a></li>
+                <li><a href="memnuniyet.html">Memnuniyet </a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="project-container">
+
+    <div class="nav-buttons" >
+        <button id="prev-btn" ><i class="fa-solid fa-angle-left"></i></button>
+        </div>
+    
+
+        <div class="project" id="project-1">
+            <h2>Proje 1</h2>
+            <p>Kendime yaptığım kişisel bir site.
+                
+            </p>
+            <a href="https://www.computerengineeer.com.tr" target="_blank"><i class="fa-solid fa-link"></i></a>
+        </div>
+
+        <div class="project" id="project-2" style="display:none;">
+            <h2>Proje 2</h2>
+            <p>Sizi tanıtan, aldığınız eğitimden iş deneyimlerinize, yaptığınız projelerden özgeçmişinize kadar herşeyin yer aldığı kişisel bir site.</p>
+            <a  href="https://lenovo900q.wixsite.com/bercan" target="_blank"><i class="fa-solid fa-link"></i></a>
+
+        </div>
+
+        <div class="project" id="project-3" style="display:none;">
+            <h2>Proje 3</h2>
+            <h4>Python ile Masaüstü Veri Görüntüleme Uygulaması</h4>
+            <p>
+                İnşaat mühendisliği şirketine yapmakta olduğum bir masaüstü programı. 
+                Pandas ve Tkinter kullanarak, Excel dosyalarındaki verileri okuyan ve kullanıcıya grafiksel arayüz üzerinden gösteren bir masaüstü programı geliştirdim. Program, dosya seçme işlemiyle veriyi pandas DataFrame'e dönüştürmekte ve bu verileri kullanıcıya etkileşimli bir şekilde sunmaktadır.
+            </p>
+            <a class="project-link" href="#">
+                <i class="fa-solid fa-link"></i>
+                <span class="link-text">Yakında</span>
+            </a>
+        </div>
+        
+
+        <div class="nav-buttons" >
+            <button id="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        let currentProject = 1;
+
+        function showProject(projectNumber) {
+            // Mevcut projeyi gizle
+            document.getElementById(`project-${currentProject}`).style.display = 'none';
+            // Yeni projeyi göster
+            currentProject = projectNumber;
+            document.getElementById(`project-${currentProject}`).style.display = 'block';
+        }
+
+        document.getElementById('next-btn').addEventListener('click', function() {
+            const nextProject = currentProject === 3 ? 1 : currentProject + 1; // 3. projeden sonra 1. projeye dön
+            showProject(nextProject);
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', function() {
+            const prevProject = currentProject === 1 ? 3 : currentProject - 1; // 1. projeden önce 3. projeye dön
+            showProject(prevProject);
+        });
+    </script>
+    
+
+
+</body>
+</html>

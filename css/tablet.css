@@ -1,0 +1,23 @@
+/* hakkımda */
+
+.container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+.container .item  img{
+    width: 500px;
+    
+
+}
+.item {
+    background-color: transparent;
+    
+}
+.container p {
+
+    text-align: justify;
+
+}

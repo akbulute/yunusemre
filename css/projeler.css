@@ -1,0 +1,104 @@
+
+/* CSS kodları */
+#let  {
+    
+    height: 100%;
+    margin: 0;
+}
+.project-container {
+    background-color: bisque;
+    height: 100%;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project {
+    background-color: azure;
+    padding: 20px;
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 10px;
+    width: 400px;
+    transition: box-shadow 0.3s ease; /* Geçiş efekti */
+}
+.project:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Hover durumunda gölge ekle */
+}
+
+button {
+    background-color: transparent;
+    padding: 15px 20px; /* Dikey ve yatay boşlukları artır */
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin: 50px;
+    font-size: 16px; /* Yazı boyutunu artır */
+    border-radius: 100px; /* Kenarları yuvarlamak için */
+    transition: background-color 0.3s; /* Geçiş efekti eklemek için */
+}
+
+
+
+button:hover {
+    background-color: azure;
+    
+}
+
+.project-container .project a i {
+    color: cadetblue;
+    background-color: transparent;
+    padding:10px 90px;
+    border-radius: 5px; /* Yuvarlak ikon arka planı */
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.project-container .project a i:hover {
+    color: white;
+    background-color:cadetblue; /* Hover durumunda arka plan rengi */
+}
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+
+.project-link {
+    color: cadetblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent ; /* Başlangıç arka plan rengi */
+    transition: background-color 0.3s, color 0.3s; /* Renk geçişleri */
+}
+
+.project-link .link-text {
+    display: none; /* Başlangıçta "Yakında" metnini gizle */
+}
+
+.project-link:hover {
+    
+    background-color:cadetblue; /* Hover durumunda arka plan rengi */
+    color: white; /* Hover durumunda metin rengi */
+}
+
+.project-link:hover .link-text {
+    padding-left: 90px ;
+    padding-right: 90px;
+    border-radius: 5px; /* Yuvarlak ikon arka planı */
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    display: inline-block; /* Hover durumunda "Yakında" metnini göster */
+}
+
+.project-link:hover i {
+    display: none; /* Hover durumunda simgeyi gizle */
+}
+
